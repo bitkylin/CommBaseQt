@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 namespace SocketText
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
         //wifi设置
         Thread serverThread;//开启服务
@@ -25,7 +25,7 @@ namespace SocketText
         static string hostName = Dns.GetHostName();//本机名   
 
         IPEndPoint ipep = new IPEndPoint((Dns.GetHostByName(hostName).AddressList[0]), 1520);//1520为连接端口
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
             System.Net.IPAddress[] addressList = Dns.GetHostByName(hostName).AddressList;//会警告GetHostByName()已过期，我运行时且只返回了一个IPv4的地址   
