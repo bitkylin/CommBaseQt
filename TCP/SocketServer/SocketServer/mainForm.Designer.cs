@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstServerCommunicationText = new System.Windows.Forms.ListBox();
             this.lstControlText = new System.Windows.Forms.ListBox();
@@ -39,20 +40,22 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnStartServer = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.IPadress = new System.Windows.Forms.ComboBox();
             this.端口号 = new System.Windows.Forms.Label();
             this.IP地址 = new System.Windows.Forms.Label();
-            this.IPADDress = new System.Windows.Forms.TextBox();
             this.Porttext = new System.Windows.Forms.TextBox();
             this.btnClearControlText = new System.Windows.Forms.Button();
             this.btnClearCommunicateText = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -169,9 +172,9 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.IPadress);
             this.groupBox4.Controls.Add(this.端口号);
             this.groupBox4.Controls.Add(this.IP地址);
-            this.groupBox4.Controls.Add(this.IPADDress);
             this.groupBox4.Controls.Add(this.Porttext);
             this.groupBox4.Controls.Add(this.btnStartServer);
             this.groupBox4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -183,6 +186,15 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "TCP连接";
+            // 
+            // IPadress
+            // 
+            this.IPadress.FormattingEnabled = true;
+            this.IPadress.Location = new System.Drawing.Point(115, 38);
+            this.IPadress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IPadress.Name = "IPadress";
+            this.IPadress.Size = new System.Drawing.Size(132, 28);
+            this.IPadress.TabIndex = 9;
             // 
             // 端口号
             // 
@@ -204,18 +216,10 @@
             this.IP地址.TabIndex = 9;
             this.IP地址.Text = "本机IP地址";
             // 
-            // IPADDress
-            // 
-            this.IPADDress.Location = new System.Drawing.Point(115, 34);
-            this.IPADDress.Margin = new System.Windows.Forms.Padding(4);
-            this.IPADDress.Name = "IPADDress";
-            this.IPADDress.Size = new System.Drawing.Size(132, 27);
-            this.IPADDress.TabIndex = 8;
-            // 
             // Porttext
             // 
             this.Porttext.Location = new System.Drawing.Point(115, 82);
-            this.Porttext.Margin = new System.Windows.Forms.Padding(4);
+            this.Porttext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Porttext.Name = "Porttext";
             this.Porttext.Size = new System.Drawing.Size(132, 27);
             this.Porttext.TabIndex = 2;
@@ -273,7 +277,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "功能区";
             // 
-            // Form1
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -281,10 +285,10 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TCP服务端";
+            this.Text = "TCP Server";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
@@ -295,6 +299,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -316,10 +321,11 @@
         private System.Windows.Forms.Button btnClearCommunicateText;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox IPADDress;
         private System.Windows.Forms.TextBox Porttext;
         private System.Windows.Forms.Label IP地址;
         private System.Windows.Forms.Label 端口号;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.ComboBox IPadress;
     }
 }
 
