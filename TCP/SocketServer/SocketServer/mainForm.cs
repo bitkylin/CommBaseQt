@@ -10,7 +10,6 @@ namespace SocketText
 {
     public partial class mainForm : Form
     {
-        //wif7i设置
         Thread serverThread;//开启服务
         Thread serverThreadSub;//接收数据
         Socket serverSocketMain = null;

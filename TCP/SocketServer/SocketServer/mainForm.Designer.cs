@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstServerCommunicationText = new System.Windows.Forms.ListBox();
             this.lstControlText = new System.Windows.Forms.ListBox();
@@ -48,14 +47,12 @@
             this.btnClearCommunicateText = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -191,7 +188,7 @@
             // 
             this.IPadress.FormattingEnabled = true;
             this.IPadress.Location = new System.Drawing.Point(115, 38);
-            this.IPadress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IPadress.Margin = new System.Windows.Forms.Padding(4);
             this.IPadress.Name = "IPadress";
             this.IPadress.Size = new System.Drawing.Size(132, 28);
             this.IPadress.TabIndex = 9;
@@ -219,7 +216,7 @@
             // Porttext
             // 
             this.Porttext.Location = new System.Drawing.Point(115, 82);
-            this.Porttext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Porttext.Margin = new System.Windows.Forms.Padding(4);
             this.Porttext.Name = "Porttext";
             this.Porttext.Size = new System.Drawing.Size(132, 27);
             this.Porttext.TabIndex = 2;
@@ -285,7 +282,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TCP Server";
@@ -299,7 +296,6 @@
             this.groupBox4.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -324,7 +320,6 @@
         private System.Windows.Forms.TextBox Porttext;
         private System.Windows.Forms.Label IP地址;
         private System.Windows.Forms.Label 端口号;
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ComboBox IPadress;
     }
 }
