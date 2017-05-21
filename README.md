@@ -1,6 +1,7 @@
 # 基于QT的跨平台 TCP 演示程序
 
-[![可执行文件](https://img.shields.io/badge/release-executable-orange.svg)](https://github.com/bitkylin/CommBaseQt/releases)
+![Framework](https://img.shields.io/badge/Framework-Qt-brightgreen.svg)
+![OS](https://img.shields.io/badge/OS-Windows|Linux-red.svg)
 [![许可证](https://img.shields.io/badge/许可证-GPL_3.0-blue.svg)](https://github.com/bitkylin/CommBaseQt/blob/master/LICENSE)
 
 ## 项目说明
