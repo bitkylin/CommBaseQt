@@ -1,3 +1,8 @@
+# 基于QT的跨平台 TCP 演示程序
+
+[![可执行文件](https://img.shields.io/badge/release-executable-orange.svg)](https://github.com/bitkylin/CommBaseQt/releases)
+[![许可证](https://img.shields.io/badge/许可证-GPL_3.0-blue.svg)](https://raw.githubusercontent.com/bitkylin/BitkyShop/master/LICENSE)
+
 ## 项目说明
 
 本项目使用 C/S 模式。在嵌入式平台下，成功移植 Linux 系统，使用 C++ 图形用户界面应用程序框架 Qt 开发系统的 TCP 客户端，在 PC 端，使用 C# 在 .NET 平台下开发系统的 TCP 服务器端。
